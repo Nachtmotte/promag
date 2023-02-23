@@ -57,4 +57,8 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  ENV["JWT_SECRET"] = "secret"
+  ENV["JWT_SECONDS_EXPIRATION_TOKEN"] = "1"
+  ENV["JWT_SECONDS_EXPIRATION_REFRESH_TOKEN"] = "2"
 end
